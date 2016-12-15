@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Assignment 2</title>
+        <style>
+            .body
+            {
+                font-family: "Constantia",Gabriola,Arial;
+                font-size: 15px;
+                margin: 10px;
+            }
+            .caption
+            {
+                padding: 5px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body bgcolor="#99d6ff" class="body">    <!--Colour from HTML color picker on w3schools.com-->
+        <div class="formclass" align="center">
+            <table>
+                <caption class="caption">Sign up form</caption>
+                <form method="post">
+                    <tr>
+                        <td>First name</td>
+                        <td><input type="text" placeholder="Enter your first name" /></td>
+                    </tr>
+                    <tr>
+                        <td>Last name</td>
+                        <td><input type="text" placeholder="Enter your last name" /></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender" value="male" />Male
+                            <input type="radio" name="gender" value="female" />Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td><input type="date" /></td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td>
+                            <select name="countrylist">
+                                <option value="India">India</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="China">China</option>
+                                <option value="UK">UK</option>
+                                <option value="USA">USA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email/Phone no.</td>
+                        <td><input type="text" placeholder="Enter your email/phone no."/></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" placeholder="Type your new password" /></td>
+                    </tr>
+                    <tr>
+                        <td>Re-enter Password</td>
+                        <td><input type="password" placeholder="Re-enter your new password" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" /></td>
+                        <td><input type="reset" /></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <hr />
+        <div class="tableclass" align="center">
+            <table border="2" height="200" width="150">
+                <caption class="caption">Table</caption>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
