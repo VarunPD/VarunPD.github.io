@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 3</title>
+    <style>
+        @keyframes changeborder
+        {
+            0% {border-bottom-color: white;}
+            20% {border-bottom-color: #66ffff;}
+            40% {border-bottom-color: #99ff99;}
+            60% {border-bottom-color: #ffff99;}
+            80% {border-bottom-color: #ff9999;}
+            100% {border-bottom-color: white;}
+        }
+        body 
+        {
+            background-color: #ffffff;
+            background-image: url("forest.jpg");
+            background-size: cover;
+            font-family: Constantia, "Lucida Bright", sans-serif;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            color: white;
+        }
+        h2
+        {
+            margin: 0px;
+            padding: 35px 10px 2px;
+            background-color: black;
+            color: white;
+            max-height: 45px;
+            width: 100%;
+            position: fixed;
+            z-index: 5;
+            font-size: 30px;
+        }
+        .profile
+        {
+            width: 230px;
+            height: 345px;  /* width and height should be enough for enlarged image and caption below it */
+            position: relative;
+            margin: auto;
+        }
+        #profilepic
+        {
+            width: 200px;
+            z-index: 3;
+            position: absolute;
+            bottom: 0px;
+            left: 15px;
+            transition-property: bottom, left, width;
+            transition-duration: 0.8s;
+            transition-timing-function: ease;
+        }
+        #piccaption
+        {
+            text-align: center;
+            color: white;
+            width: 196px;
+            position: absolute;
+            bottom: 0px;
+            left: 15px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: teal;
+        }
+        #profilepic:hover
+        {
+            width: 230px;
+            bottom: 40px;
+            left: 0;
+        }
+        .content
+        {
+            background-color: rgba(127,127,127,0.3);
+            margin: 8px;
+            padding: 3px;
+            font-size: 18px;
+        }
+        .heading
+        {
+            border-style: solid;
+            border-width: 0 0 2px;
+            border-color: white;
+            margin: 8px 10px 3px;
+            padding: 5px;
+            width: 300px;
+            font-size: 25px;
+            animation-name: changeborder;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+        #small
+        {
+            font-size: 5px;
+            font-weight: 100;
+            font-style: italic;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <h2>My Profile</h2>
+    <figure class="profile">
+            <a href="https://www.facebook.com/IIT.Kgp" target="_blank">
+                <img id="profilepic" src="varun.jpg" alt="My Photo" title="This is me! Or is it?">
+            </a>
+            <figcaption id="piccaption">Yep, this was taken on the date mentioned</figcaption>
+    </figure>
+    <div class="content">
+        <div class="heading">
+            My <font id="small">(so called!)</font> achievements
+        </div>
+        <ol type="1">
+            <li>Managing to get into IIT Kgp</li>
+            <li>Learning a lot of new stuff like the basics of Javascript and OpenCV within a semester (though others have learnt much more!)</li>
+            <li>Creating this webpage and the ones for the remaining assignments :)</li>
+        </ol>
+    </div>
+    <br />
+    <div class="content">
+        <div class="heading">
+            My hobbies and interests
+        </div>
+        <ul type="square">
+            <li>Reading novels</li>
+            <li>Playing badminton</li>
+            <li>Playing the keyboard</li>
+        </ul>
+    </div>
+</body>
+</html>
