@@ -1,0 +1,72 @@
+        body
+        {
+            background-image: url("../project/library.jpg");
+            background-size: cover;
+        }
+
+        #header
+        {
+            background-color: rgba(228, 168, 85, 0.6);
+            background-clip: border-box;
+            margin: 0 0 10px;
+            padding: 20px 0 2px;
+            border-bottom: 1px;
+        }
+
+        #notestable
+        {
+            background-color: rgba(219, 130, 229, 0.60);
+            color: black;
+        }
+
+        tr:hover
+        {
+            cursor: pointer;
+        }
+
+        #firstrow:hover
+        {
+            cursor: default;
+        }
+
+        #onenotediv
+        {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 50px;
+            background-color: azure;
+            border-style: solid;
+            border-color: green;
+            border-width: 1px;
+        }
+
+        #notetitlediv
+        {
+            border-style: solid;
+            border-color: black;
+            border-width: 0 0 1px;
+        }
+
+        #notedescrdiv
+        {
+            border-style: solid;
+            border-color: rgba(0,0,0,0.5);
+            border-width: 1px;
+            padding-left: 5px;
+        }
+
+        #notetitleform
+        {
+            max-width: 700px;
+        }
+
+        #notedescrform
+        {
+            max-width: 700px;
+        }
+
+        #quotenote
+        {
+            background-color: rgba(137, 246, 239, 0.60);
+        }
