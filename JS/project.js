@@ -6,7 +6,7 @@ var authobj = {
 
 var sessId;
 
-$.post("http://www.eduspectrum.com/api/authenticate.php", authobj, function (data) {
+$.post("https://www.eduspectrum.com/api/authenticate.php", authobj, function (data) {
     data = JSON.parse(data);
     sessId = data.sessionId;
     console.log("sessionId is " + sessId);
@@ -27,7 +27,7 @@ function getNotes()
         sessionId: sessId,
         rollNo: '16EE30022'
     };
-    $.post("http://www.eduspectrum.com/api/getAll.php", obj, function (data) {
+    $.post("https://www.eduspectrum.com/api/getAll.php", obj, function (data) {
         var posts = JSON.parse(data);
         allPosts = posts;
         for (var i = 0; i < posts.length; i++) {
@@ -80,7 +80,7 @@ function deleteNote()
             rollNo: '16EE30022',
             createdAt: document.getElementById("notetimediv").innerHTML
         };
-        $.post( "http://www.eduspectrum.com/api/delete.php", post, function(data) {
+        $.post( "https://www.eduspectrum.com/api/delete.php", post, function(data) {
             console.log(data);
         });
         window.location.href="./index.html";
@@ -127,7 +127,7 @@ function sendEditedNote()
         title: document.getElementById("notetitleform").value,
         description: document.getElementById("notedescrform").value
     };
-    $.post("http://www.eduspectrum.com/api/create.php", editedNote, function (data) {
+    $.post("https://www.eduspectrum.com/api/create.php", editedNote, function (data) {
         var postData = JSON.parse(data);
         console.log(postData);
     });
@@ -137,7 +137,7 @@ function sendEditedNote()
         rollNo: '16EE30022',
         createdAt: document.getElementById("notetimediv").innerHTML
     };
-    $.post( "http://www.eduspectrum.com/api/delete.php", oldNote, function(data) {
+    $.post( "https://www.eduspectrum.com/api/delete.php", oldNote, function(data) {
         console.log(data);
     });
 
