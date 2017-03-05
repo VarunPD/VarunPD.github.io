@@ -59,7 +59,7 @@
             rollNo: "16EE30022"
         };
         var sessId;
-        $.post("http://www.eduspectrum.com/api/authenticate.php", authobj, function (data) {
+        $.post("https://www.eduspectrum.com/api/authenticate.php", authobj, function (data) {
             data = JSON.parse(data);
             sessId = data.sessionId;
             console.log(sessId);
@@ -78,7 +78,7 @@
                 title: document.getElementById("title").value,
                 description: document.getElementById("description").value
             };
-            $.post("http://www.eduspectrum.com/api/create.php", post, function (data) {
+            $.post("https://www.eduspectrum.com/api/create.php", post, function (data) {
                 var postData = JSON.parse(data);
                 console.log(postData);
             });
